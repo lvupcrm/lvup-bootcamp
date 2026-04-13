@@ -50,13 +50,135 @@ export default function SolutionSection() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.7, delay: i * 0.15, ease }}
-                className="glass-card tech-glow px-5 sm:px-8 py-5 flex items-center gap-4 w-full sm:min-w-[280px] sm:w-auto"
+                className="glass-card tech-glow px-5 sm:px-8 py-5 flex items-center gap-4 min-w-0 sm:min-w-[280px] w-auto"
               >
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
                   <step.icon size={24} className="text-primary" weight="duotone" />
                 </div>
                 <span className="text-base md:text-lg font-semibold">{step.label}</span>
               </motion.div>
+              {/* 광고 소재 제작 아래 슬라이드 이미지 */}
+              {i === 0 && (
+                <div className="mt-4 mb-2 w-full max-w-2xl overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+                  <motion.div
+                    className="flex gap-4"
+                    animate={{ x: ["0%", "-50%"] }}
+                    transition={{
+                      x: {
+                        duration: 20,
+                        repeat: Infinity,
+                        ease: "linear",
+                      },
+                    }}
+                  >
+                    {[1, 2, 3, 4, 5, 1, 2, 3, 4, 5].map((n, idx) => (
+                      <img
+                        key={idx}
+                        src={`/images/ad-sample-${n}.png`}
+                        alt={`광고 소재 샘플 ${n}`}
+                        className="rounded-xl w-32 sm:w-40 shrink-0"
+                      />
+                    ))}
+                  </motion.div>
+                </div>
+              )}
+              {i === 1 && (
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={inView ? { opacity: 1, scale: 1 } : {}}
+                  transition={{ duration: 0.7, delay: 0.3, ease }}
+                  className="mt-4 mb-2 w-full max-w-2xl"
+                >
+                  <div className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+                    <motion.div
+                      className="flex gap-3"
+                      animate={{ x: ["0%", "-50%"] }}
+                      transition={{
+                        x: {
+                          duration: 30,
+                          repeat: Infinity,
+                          ease: "linear",
+                        },
+                      }}
+                    >
+                      {[...Array(2)].flatMap((_, dupIdx) =>
+                        [
+                          { url: "https://stay-fitness.vercel.app", label: "랜딩 페이지" },
+                          { url: "https://stay-fitness.vercel.app/story", label: "스토리 페이지" },
+                          { url: "https://fitness-landing-xi.vercel.app", label: "피트니스 랜딩" },
+                          { url: "https://fitness-landing-v2.vercel.app", label: "피트니스 V2" },
+                          { url: "https://fitness-landing-v3.vercel.app", label: "피트니스 V3" },
+                        ].map((page, idx) => (
+                          <div key={`${dupIdx}-${idx}`} className="glass-card rounded-2xl overflow-hidden p-2 shrink-0 w-40 sm:w-48">
+                            <div className="relative rounded-xl overflow-hidden aspect-[9/16]">
+                              <iframe
+                                src={page.url}
+                                title={`${page.label} 미리보기`}
+                                className="w-[400%] h-[400%] origin-top-left scale-25 pointer-events-none"
+                                loading="lazy"
+                                sandbox="allow-scripts allow-same-origin"
+                              />
+                              <a
+                                href={page.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="absolute inset-0 z-10 flex items-end justify-center pb-6 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"
+                              >
+                                <span className="text-white text-sm font-medium bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">
+                                  {page.label} 보기 →
+                                </span>
+                              </a>
+                            </div>
+                          </div>
+                        ))
+                      )}
+                    </motion.div>
+                  </div>
+                </motion.div>
+              )}
+              {i === 2 && (
+                <div className="mt-4 mb-2 w-full max-w-2xl overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+                  <motion.div
+                    className="flex gap-4"
+                    animate={{ x: ["0%", "-50%"] }}
+                    transition={{
+                      x: {
+                        duration: 25,
+                        repeat: Infinity,
+                        ease: "linear",
+                      },
+                    }}
+                  >
+                    {[1, 2, 3, 1, 2, 3].map((n, idx) => (
+                      <img
+                        key={idx}
+                        src={`/images/notion-db-${n}.png`}
+                        alt={`노션 DB 샘플 ${n}`}
+                        className="rounded-xl w-72 sm:w-[36rem] shrink-0"
+                      />
+                    ))}
+                  </motion.div>
+                </div>
+              )}
+              {i === 3 && (
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={inView ? { opacity: 1, scale: 1 } : {}}
+                  transition={{ duration: 0.7, delay: 0.5, ease }}
+                  className="mt-4 mb-2 w-full max-w-xs sm:max-w-md"
+                >
+                  <div className="glass-card rounded-2xl overflow-hidden p-2">
+                    <video
+                      src="/images/lead-system.mp4"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="rounded-xl w-full"
+                    />
+                  </div>
+                </motion.div>
+              )}
               {i < steps.length - 1 && (
                 <ArrowDown
                   size={20}

@@ -37,6 +37,20 @@ export default function HeroSection() {
           <span className="gradient-text">AI가 대신 일하는 센터를 만드세요</span>
         </motion.h1>
 
+        {/* Hero banner */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3, ease }}
+          className="mb-8"
+        >
+          <img
+            src="/images/hero-banner.jpeg"
+            alt="피트니스 AI 자동화 시스템 미리보기"
+            className="rounded-xl w-full max-w-md mx-auto"
+          />
+        </motion.div>
+
         {/* Sub */}
         <motion.p
           initial={{ opacity: 0, y: 30 }}
