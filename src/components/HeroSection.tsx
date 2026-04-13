@@ -72,7 +72,7 @@ export default function HeroSection() {
         >
           <span className="flex items-center gap-2">
             <span className="text-primary font-semibold">일시</span>
-            5월 2일 (금) 오후 12시 ~ 6시
+            5월 2일 (토) 오후 12시 ~ 6시
           </span>
           <span className="hidden md:inline text-white/20">|</span>
           <span className="flex items-center gap-2">
