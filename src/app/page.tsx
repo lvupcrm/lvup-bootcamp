@@ -9,11 +9,13 @@ import DeliverablesSection from "@/components/DeliverablesSection";
 import PricingSection from "@/components/PricingSection";
 import FaqSection from "@/components/FaqSection";
 import Footer from "@/components/Footer";
+import FloatingCta from "@/components/FloatingCta";
 
 export default function Home() {
   return (
     <>
       <Navigation />
+      <FloatingCta />
       <main>
         <HeroSection />
         <ProblemSection />
