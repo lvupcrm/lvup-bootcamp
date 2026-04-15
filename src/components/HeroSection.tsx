@@ -32,9 +32,9 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.2, ease }}
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.1] tracking-tight mb-8"
         >
-          광고, 문의, 상담까지
+          광고, 문의, 상담
           <br />
-          <span className="gradient-text">AI가 대신 일하는 센터를 만드세요</span>
+          <span className="gradient-text">아직도 사람이 직접 하나요?</span>
         </motion.h1>
 
         {/* Hero banner */}

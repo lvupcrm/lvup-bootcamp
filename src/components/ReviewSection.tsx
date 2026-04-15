@@ -106,11 +106,11 @@ export default function ReviewSection() {
       </div>
 
       {/* Row 1 - slides left */}
-      <div className="mb-4 [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)]">
+      <div className="mb-4 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)]">
         <motion.div
           className="flex gap-4"
           animate={{ x: ["0%", "-50%"] }}
-          transition={{ x: { duration: 40, repeat: Infinity, ease: "linear" } }}
+          transition={{ x: { duration: 25, repeat: Infinity, ease: "linear" } }}
         >
           {[...row1, ...row1].map((review, idx) => (
             <ReviewCard key={idx} review={review} />
@@ -119,11 +119,11 @@ export default function ReviewSection() {
       </div>
 
       {/* Row 2 - slides right */}
-      <div className="[mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)]">
+      <div className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)]">
         <motion.div
           className="flex gap-4"
           animate={{ x: ["-50%", "0%"] }}
-          transition={{ x: { duration: 45, repeat: Infinity, ease: "linear" } }}
+          transition={{ x: { duration: 30, repeat: Infinity, ease: "linear" } }}
         >
           {[...row2, ...row2].map((review, idx) => (
             <ReviewCard key={idx} review={review} />
