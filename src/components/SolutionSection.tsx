@@ -36,7 +36,7 @@ export default function SolutionSection() {
             Solution
           </p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
-            <span className="gradient-text">6시간</span> 만에 이 시스템을,
+            여러분은 이 시스템을
             <br className="hidden sm:block" />
             직접 만듭니다.
           </h2>

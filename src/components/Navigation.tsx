@@ -59,7 +59,7 @@ export default function Navigation() {
             </a>
           ))}
           <a
-            href="https://tally.so/r/ob7Q6X" target="_blank" rel="noopener noreferrer"
+            href="https://lvupfitness.kr/shop_view?idx=30" target="_blank" rel="noopener noreferrer"
             className="px-5 py-2 rounded-full bg-primary text-white text-sm font-semibold hover:bg-primary-light transition-colors"
           >
             신청하기
@@ -93,7 +93,7 @@ export default function Navigation() {
             </a>
           ))}
           <a
-            href="https://tally.so/r/ob7Q6X" target="_blank" rel="noopener noreferrer"
+            href="https://lvupfitness.kr/shop_view?idx=30" target="_blank" rel="noopener noreferrer"
             onClick={() => setMobileOpen(false)}
             className="mt-2 block text-center px-5 py-4 rounded-full bg-primary text-white font-semibold"
           >

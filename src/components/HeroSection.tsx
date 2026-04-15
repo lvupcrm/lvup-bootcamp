@@ -89,7 +89,7 @@ export default function HeroSection() {
           className="flex flex-col items-center gap-4"
         >
           <a
-            href="https://tally.so/r/ob7Q6X"
+            href="https://lvupfitness.kr/shop_view?idx=30"
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-2 px-8 py-4 rounded-full bg-primary text-white font-bold text-lg hover:bg-primary-light transition-all hover:shadow-[0_0_40px_rgba(0,191,255,0.3)]"

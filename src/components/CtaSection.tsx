@@ -40,7 +40,7 @@ export default function CtaSection() {
           </p>
 
           <a
-            href="https://forms.gle/example"
+            href="https://lvupfitness.kr/shop_view?idx=30"
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-2 px-10 py-5 rounded-full bg-primary text-white font-bold text-lg hover:bg-primary-light transition-all hover:shadow-[0_0_50px_rgba(0,191,255,0.35)]"

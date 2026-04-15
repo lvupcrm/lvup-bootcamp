@@ -81,20 +81,29 @@ export default function ProblemSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.7, ease }}
-          className="text-center mt-12 space-y-4"
+          className="mt-16 max-w-2xl mx-auto"
         >
-          <p className="text-text-muted text-lg">
-            문의 1건을 놓치면,{" "}
-            <span className="text-danger font-semibold">
+          <div className="glass-card p-8 md:p-10 text-center rounded-2xl border-danger/20 shadow-lg shadow-danger/5">
+            <p className="text-xl md:text-2xl leading-relaxed text-text-muted">
+              문의 1건을 놓치면,
+            </p>
+            <p className="text-2xl md:text-3xl font-bold text-danger mt-3">
               60만원짜리 PT 계약이 사라집니다.
-            </span>{" "}
-            한 달이면 수백만 원입니다.
-          </p>
-          <p className="text-lg text-foreground/80 font-medium">
-            그런데 만약, 문의가 들어오는 순간 자동으로 노션에 기록되고,
-            <br className="hidden sm:block" />
-            메시지까지 발송된다면?
-          </p>
+            </p>
+            <p className="text-base md:text-lg text-text-muted mt-2">
+              한 달이면 수백만 원입니다.
+            </p>
+
+            <div className="w-12 h-px bg-foreground/20 mx-auto my-6" />
+
+            <p className="text-lg md:text-xl text-foreground/80 font-medium leading-relaxed">
+              그런데 만약, 문의가 들어오는 순간
+              <br className="hidden sm:block" />
+              자동으로 노션에 기록되고,
+              <br className="hidden sm:block" />
+              메시지까지 발송된다면?
+            </p>
+          </div>
         </motion.div>
       </div>
     </section>

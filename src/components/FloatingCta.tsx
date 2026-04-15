@@ -26,7 +26,7 @@ export default function FloatingCta() {
           className="fixed bottom-6 left-0 right-0 z-50 flex justify-center px-4 pointer-events-none"
         >
           <a
-            href="https://tally.so/r/ob7Q6X"
+            href="https://lvupfitness.kr/shop_view?idx=30"
             target="_blank"
             rel="noopener noreferrer"
             className="pointer-events-auto inline-flex items-center gap-2 px-8 py-4 rounded-full bg-primary text-white font-bold text-base shadow-[0_4px_30px_rgba(0,191,255,0.4)] hover:bg-primary-light hover:shadow-[0_4px_50px_rgba(0,191,255,0.55)] transition-all"
